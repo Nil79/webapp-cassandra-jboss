@@ -46,7 +46,7 @@ In this example I used Guava 16-rc1 that was released to solve this issue.
 Face to Face with Cassandra
 -------------------------
 
-Using cassandra is necessary to take in mind what are the characteristics of the project you are developing.
+When using cassandra is necessary to take in mind what are the characteristics of the project you are developing.
 
 Multiple requests generates multiple queries at same time, so you need to avoid anti-patterns due to continues Read/Write operations.
 
