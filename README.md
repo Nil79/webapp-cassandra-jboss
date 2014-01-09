@@ -28,9 +28,9 @@ DataStax Java Driver uses as dependencies Netty and Guava.
 
 This would generate some issues during deployments.
 
-The first trick is to exclude netty while import datastax java driver dependency. Netty is already provided by the container so it's unuseful.
+The first trick is to exclude netty while importing datastax java driver dependency. Netty is already provided by the container so it's unuseful.
 
-But at runtime, when the driver performs select query it would be returned the following error message:
+But at runtime, when the driver performs select query, it returns the following error message:
 
 	java.lang.NoClassDefFoundError: org/jboss/netty/channel/ChannelFactory
 	
